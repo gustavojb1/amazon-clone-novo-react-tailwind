@@ -2,3 +2,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: 'emberBold';
+  src: local('emberBold'), url(./fonts/AmazonEmber_Bd.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'emberLight';
+  src: local('emberLight'), url(./fonts/AmazonEmber_Lt.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'emberRegular';
+  src: local('emberRegular'), url(./fonts/AmazonEmber_Rg.ttf) format('truetype');
+}
