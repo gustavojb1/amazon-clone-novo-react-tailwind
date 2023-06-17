@@ -25,13 +25,13 @@ function App() {
             <p className="text-sm font-emberBold leading-3">Lavras 37200366</p>
           </div>
         </div>
-        <div className="flex mt-3 md:mt-0 w-full md:w-auto flex-grow mx-1 md:mx-4  rounded bg-white z-10  focus-within:ring focus-within:ring-orange-650">
+        <div className="flex mt-3 md:mt-0 w-full md:w-auto flex-grow mx-1 md:mx-4  rounded-lg bg-white z-10  focus-within:ring focus-within:ring-orange-650">
           <form action="" className="flex flex-grow z-20 ">
-              <select name="" id="" className="hidden md:block pl-2 z-40 text-xs text-black bg-gray-200 hover:bg-gray-300 rounded-tl rounded-bl border-r border-gray-300 focus:outline-none focus:ring focus:ring-orange-650 focus:border-r-transparent">
+              <select name="" id="" className="hidden md:block pl-2 z-40 text-xs text-black bg-gray-200 hover:bg-gray-300 rounded-tl-lg rounded-bl-lg border-r border-gray-300 focus:outline-none focus:ring focus:ring-orange-650 focus:border-r-transparent">
                 <option value="">Todos</option>
               </select>          
               <input type="text" placeholder="Pesquisa na Amazon.com.br" className=" text-sm px-2 z-30 flex-grow rounded-l md:rounded-none bg-white text-gray-700 focus:outline-none"></input>
-              <button className="px-3 h-10 flex items-center  bg-gold-100 hover:bg-gold-200 md:rounded-none rounded-tr rounded-br focus:outline-none hover:border-transparent">
+              <button className="px-3 h-10 flex items-center  bg-gold-100 hover:bg-gold-200 md:rounded-none md:rounded-tr-lg md:rounded-br-lg focus:outline-none hover:border-transparent">
                 <i className="fas fa-search text-darkblue-900 text-xl "></i>
               </button>
           </form>
