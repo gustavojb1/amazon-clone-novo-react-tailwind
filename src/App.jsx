@@ -1,4 +1,5 @@
 import "./App.css";
+import Carroussel from "./components/Carroussel";
 import logo from "./img/amazon_logo.png";
 
 function App() {
@@ -7,7 +8,7 @@ function App() {
       {/* HEADER SUPERIOR */}
       <div className="flex flex-wrap md:flex-nowrap bg-darkblue-700  md:bg-darkblue-900  px-2 pb-2 md:pt-1 md:px-3 items-center">
         <div className="py-1 px-2 mt-1 md:hidden">
-          <i className="fa fa-bars text-2xl"/>
+          <i className="fa fa-bars text-2xl" />
         </div>
         {/* LOGO */}
         <div className="flex items-end mx-1 md:pt-2 md:pr-2 md:mb-1 border border-transparent hover:border-white">
@@ -20,7 +21,7 @@ function App() {
         </div>
         <div className="hidden md:flex px-2 py-2 border border-transparent hover:border-white text-xs items-end">
           <div className="pr-1 ">
-            <i className="fa-solid fa-location-dot text-sm"/>
+            <i className="fa-solid fa-location-dot text-sm" />
           </div>
           <div>
             <p className="text-gray-200 font-emberLight">Olá</p>
@@ -44,14 +45,14 @@ function App() {
               className=" text-sm px-2 z-30 flex-grow rounded-l md:rounded-none bg-white text-gray-700 focus:outline-none"
             ></input>
             <button className="px-3 h-10 flex items-center  bg-gold-100 hover:bg-gold-200 md:rounded-none md:rounded-tr-lg md:rounded-br-lg focus:outline-none hover:border-transparent">
-              <i className="fas fa-search text-darkblue-900 text-xl "/>
+              <i className="fas fa-search text-darkblue-900 text-xl " />
             </button>
           </form>
         </div>
         <div className="hidden lg:block ml-1 text-sm border border-transparent hover:border-white rounded-sm p-2">
           <p className="leading-5">Olá, faça seu login</p>
           <p className="font-emberBold text-sm leading-3">
-            Contas e Listas <i className="fas fa-chevron-down"/>
+            Contas e Listas <i className="fas fa-chevron-down" />
           </p>
         </div>
         <div className="hidden md:block mx-3 text-sm border border-transparent hover:border-white rounded-sm p-2 pb3">
@@ -64,7 +65,7 @@ function App() {
           <i className="fa-regular fa-user"></i>
         </div>
         <div className="items-end p-2 border border-transparent hover:border-white rounded-sm absolute right-0 top-0 mr-2 mt-2 md:mr-0 md:mt-0 md:relative order-1 md:order-none md:flex">
-          <i className="fas fa-shopping-cart flex text-2xl md:mr-2"/>
+          <i className="fas fa-shopping-cart flex text-2xl md:mr-2" />
           <span className="bold text-gold-200 text-base absolute top-0 left-0 -mt-1 ml-4 text-center w-6 h-6 bg-darkblue-600 rounded-full">
             0
           </span>
@@ -76,7 +77,7 @@ function App() {
       {/* HEADER INFERIOR */}
       <div className="flex bg-darkblue-700 text-sm px-2 py-3 items-center overflow-x-auto overflow-y-hidden h-11 -mt-1 no-scrollbar">
         <div className="p-0.5 pl-4 mt-1 hidden md:flex items-center">
-          <i className="fa fa-bars text-2xl"/>
+          <i className="fa fa-bars text-2xl" />
           <span className="ml-2 mr-5 text-base font-emberBold">Todos</span>
         </div>
         <ul className="flex gap-6 text-base md:text-base whitespace-nowrap ml-2 md:ml-0">
@@ -98,17 +99,15 @@ function App() {
         </ul>
       </div>
       <div className="md:hidden bg-darkblue-600 pt-2 pb-3 pl-4">
-        <i className="fa-solid fa-location-dot text-sm pr-2"/>
+        <i className="fa-solid fa-location-dot text-sm pr-2" />
         <span className="text-xs mr-1">Enviar para Lavras 37200000</span>
         <i className="fa-solid fa-chevron-down text-xs"></i>
       </div>
+      <main className="w-screen md:min-w-[1010px] md:max-w-[1650px] mx-auto bg-white">
+        <Carroussel />
+      </main>
 
-
-
-
-
-
-
+      {/* md:min-w-1010px md:max-w-[1500px] mx-auto */}
 
     </div>
   );
