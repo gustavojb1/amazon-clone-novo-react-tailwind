@@ -103,7 +103,7 @@ function App() {
         <span className="text-xs mr-1">Enviar para Lavras 37200000</span>
         <i className="fa-solid fa-chevron-down text-xs"></i>
       </div>
-      <main className="w-screen md:min-w-[1010px] md:max-w-[1650px] mx-auto bg-white">
+      <main className="w-screen md:min-w-[1010px] md:max-w-[1650px] mx-auto">
         <Carroussel />
       </main>
 
