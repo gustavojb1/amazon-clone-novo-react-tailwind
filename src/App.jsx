@@ -114,10 +114,10 @@ function App() {
         <span className="text-xs mr-1">Enviar para Lavras 37200000</span>
         <i className="fa-solid fa-chevron-down text-xs"></i>
       </div>
-      <main className="w-screen md:min-w-[1010px] md:max-w-[1700px] mx-auto">
+      <main className="w-screen md:min-w-[1010px] md:max-w-[1700px] mx-auto border border-black">
         <Carroussel/>
         
-        <div className=" w-screen md:min-w-[1010px] md:max-w-[1700px] absolute mt-[-380px] px-10 flex gap-x-5">
+        <div className="mt-[-22%] px-10 flex gap-x-5">
           <Card
           images={[livro1, livro2, livro3, livro4]}
           description={
@@ -145,6 +145,7 @@ function App() {
             ]
           }
           />
+          <div className="xl:flex hidden z-20 w-full">
           <Card
           images={[]}
           description={
@@ -153,7 +154,10 @@ function App() {
             'Descubra tudo que Alexa pode fazer'
             ]
           }
+
           />
+          </div>
+         
           
         </div>
         

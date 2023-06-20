@@ -66,10 +66,10 @@ const Carroussel = () => {
   };
 
   return (
-    <div className="relative ">
+    <div className="relative w-full border border-orange-600">
       <div
         id="teste"
-        className=" text-black carousel flex items-center justify-start overflow-x-scroll no-scrollbar scroll-smooth relative"
+        className=" text-black carousel flex items-center justify-start overflow-x-scroll no-scrollbar scroll-smooth relative "
       >
         <img src={img1} alt="" className="w-full" />
         <img src={img2} alt="" className="w-full" />
@@ -89,6 +89,7 @@ const Carroussel = () => {
       >
         <i className="fa-solid fa-chevron-right text-5xl"></i>
       </button>
+      
     </div>
   );
 };
