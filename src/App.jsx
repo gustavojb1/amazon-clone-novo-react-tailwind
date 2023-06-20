@@ -146,10 +146,11 @@ function App() {
           }
           />
           <Card
-          images={[frete_gratis]}
+          images={[]}
           description={
-            ['Frete GRÁTIS no seu primeiro pedido',
-            'Saiba como aproveitar'
+            ['Conheça Alexa',
+            'Alexa torna sua vida mais fácil, conveniente e divertida, transformando seu dia a dia.',
+            'Descubra tudo que Alexa pode fazer'
             ]
           }
           />
