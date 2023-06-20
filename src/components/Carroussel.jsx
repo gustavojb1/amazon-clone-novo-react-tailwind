@@ -66,7 +66,7 @@ const Carroussel = () => {
   };
 
   return (
-    <div className="relative">
+    <div className="relative ">
       <div
         id="teste"
         className=" text-black carousel flex items-center justify-start overflow-x-scroll no-scrollbar scroll-smooth relative"

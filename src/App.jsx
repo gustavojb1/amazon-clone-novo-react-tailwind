@@ -1,6 +1,17 @@
 import "./App.css";
+import Card from "./components/Card";
 import Carroussel from "./components/Carroussel";
 import logo from "./img/amazon_logo.png";
+import livro1 from "./img/livro1.jpg";
+import livro2 from "./img/livro2.jpg";
+import livro3 from "./img/livro3.jpg";
+import livro4 from "./img/livro4.jpg";
+import frete_gratis from "./img/frete_gratis.jpg";
+import prod1_1 from "./img/1_1.jpg";
+import prod1_2 from "./img/1_2.jpg";
+import prod1_3 from "./img/1_3.jpg";
+import prod1_4 from "./img/1_4.jpg";
+
 
 function App() {
   return (
@@ -103,8 +114,49 @@ function App() {
         <span className="text-xs mr-1">Enviar para Lavras 37200000</span>
         <i className="fa-solid fa-chevron-down text-xs"></i>
       </div>
-      <main className="w-screen md:min-w-[1010px] md:max-w-[1650px] mx-auto">
-        <Carroussel />
+      <main className="w-screen md:min-w-[1010px] md:max-w-[1700px] mx-auto">
+        <Carroussel/>
+        
+        <div className=" w-screen md:min-w-[1010px] md:max-w-[1700px] absolute mt-[-380px] px-10 flex gap-x-5">
+          <Card
+          images={[livro1, livro2, livro3, livro4]}
+          description={
+            ['Trabalhe 4 horas por semana ',
+            'O poder da ação',
+            'Desconstruindo a ansiedade',
+            'Fahrenheit 451',
+            'Continue de onde parou'
+            ]
+          }
+          />
+          <Card
+          images={[frete_gratis]}
+          description={
+            ['Frete GRÁTIS no seu primeiro pedido',
+            'Saiba como aproveitar'
+            ]
+          }
+          />
+          <Card
+          images={[prod1_1,prod1_2,prod1_3,prod1_4]}
+          description={
+            ['Ofertas recomendadas para você',
+            'Ver todas as ofertas'
+            ]
+          }
+          />
+          <Card
+          images={[frete_gratis]}
+          description={
+            ['Frete GRÁTIS no seu primeiro pedido',
+            'Saiba como aproveitar'
+            ]
+          }
+          />
+          
+        </div>
+        
+        
       </main>
 
       {/* md:min-w-1010px md:max-w-[1500px] mx-auto */}
