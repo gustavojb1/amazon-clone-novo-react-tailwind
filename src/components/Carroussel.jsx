@@ -66,7 +66,7 @@ const Carroussel = () => {
   };
 
   return (
-    <div className="relative w-full border border-orange-600">
+    <div className="relative w-full">
       <div
         id="teste"
         className=" text-black carousel flex items-center justify-start overflow-x-scroll no-scrollbar scroll-smooth relative "
@@ -89,7 +89,6 @@ const Carroussel = () => {
       >
         <i className="fa-solid fa-chevron-right text-5xl"></i>
       </button>
-      
     </div>
   );
 };

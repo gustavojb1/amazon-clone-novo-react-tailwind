@@ -11,7 +11,11 @@ import prod1_1 from "./img/1_1.jpg";
 import prod1_2 from "./img/1_2.jpg";
 import prod1_3 from "./img/1_3.jpg";
 import prod1_4 from "./img/1_4.jpg";
-
+import ofertas_do_dia from "./img/ofertas_do_dia.jpg";
+import echo_pop from "./img/echo_pop.jpg";
+import echo_dot from "./img/echo_dot.jpg";
+import fire_tv from "./img/fire_tv.jpg";
+import echo_dot_4 from "./img/echo_dot_4.jpg";
 
 function App() {
   return (
@@ -114,58 +118,85 @@ function App() {
         <span className="text-xs mr-1">Enviar para Lavras 37200000</span>
         <i className="fa-solid fa-chevron-down text-xs"></i>
       </div>
-      <main className="w-screen md:min-w-[1010px] md:max-w-[1700px] mx-auto border border-black">
-        <Carroussel/>
-        
-        <div className="mt-[-22%] px-10 flex gap-x-5">
+      {/* PRINCIPAL */}
+      <main className="flex flex-col gap-y-6 w-screen md:min-w-[1010px] md:max-w-[1500px] mx-auto">
+        <Carroussel />
+
+        <div className="mt-[-22%] px-8 grid xl:grid-cols-4 grid-cols-3 gap-x-5">
           <Card
-          images={[livro1, livro2, livro3, livro4]}
-          description={
-            ['Trabalhe 4 horas por semana ',
-            'O poder da ação',
-            'Desconstruindo a ansiedade',
-            'Fahrenheit 451',
-            'Continue de onde parou'
-            ]
-          }
+            images={[livro1, livro2, livro3, livro4]}
+            description={[
+              "Trabalhe 4 horas por semana ",
+              "O poder da ação",
+              "Desconstruindo a ansiedade",
+              "Fahrenheit 451",
+              "Continue de onde parou",
+            ]}
           />
           <Card
-          images={[frete_gratis]}
-          description={
-            ['Frete GRÁTIS no seu primeiro pedido',
-            'Saiba como aproveitar'
-            ]
-          }
+            images={[frete_gratis]}
+            description={[
+              "Frete GRÁTIS no seu primeiro pedido",
+              "Saiba como aproveitar",
+            ]}
           />
           <Card
-          images={[prod1_1,prod1_2,prod1_3,prod1_4]}
-          description={
-            ['Ofertas recomendadas para você',
-            'Ver todas as ofertas'
-            ]
-          }
+            images={[prod1_1, prod1_2, prod1_3, prod1_4]}
+            description={[
+              "Ofertas recomendadas para você",
+              "Ver todas as ofertas",
+            ]}
           />
           <div className="xl:flex hidden z-20 w-full">
-          <Card
-          images={[]}
-          description={
-            ['Conheça Alexa',
-            'Alexa torna sua vida mais fácil, conveniente e divertida, transformando seu dia a dia.',
-            'Descubra tudo que Alexa pode fazer'
-            ]
-          }
-
-          />
+            <Card
+              images={[]}
+              description={[
+                "Conheça Alexa",
+                "Alexa torna sua vida mais fácil, conveniente e divertida, transformando seu dia a dia.",
+                "Descubra tudo que Alexa pode fazer",
+              ]}
+            />
           </div>
-         
-          
         </div>
-        
-        
+        <div className="hidden md:grid xl:grid-cols-4 grid-cols-3 px-8 gap-x-5 h-[420px]">
+          <div className="bg-[url('./img/air.jpg')] filme bg-center  col-span-2 flex flex-col items-start pt-7 pl-5 pb-3">
+            <p className="font-emberBold text-xl">
+              Prime Video: Recomendado para você
+            </p>
+            <p className="h-full">AIR: a história por tras do logo</p>
+            <p className="text-xs">Assista agora no Prime Video</p>
+          </div>
+          <div className="hidden xl:block">
+            <Card
+              images={[ofertas_do_dia]}
+              description={["Ofertas do Dia", "Ver todas as ofertas"]}
+            />
+          </div>
+          <div className="hidden xl:block h-full">
+            <Card
+              images={[echo_pop, echo_dot, fire_tv, echo_dot_4]}
+              description={[
+                "Novo Echo Pop ",
+                "Echo Dot 3ª geração",
+                "Fire TV Stick Lite",
+                "Echo Dot com Relógio 4ª Ger.",
+                "Echo e Fire TV com Alexa",
+                "Confira todos os Dispositivos Amazon",
+              ]}
+            />
+          </div>
+          <div className="block xl:hidden h-full">
+            <Card
+              images={[]}
+              description={[
+                "Conheça Alexa",
+                "Alexa torna sua vida mais fácil, conveniente e divertida, transformando seu dia a dia.",
+                "Descubra tudo que Alexa pode fazer",
+              ]}
+            />
+          </div>
+        </div>
       </main>
-
-      {/* md:min-w-1010px md:max-w-[1500px] mx-auto */}
-
     </div>
   );
 }
