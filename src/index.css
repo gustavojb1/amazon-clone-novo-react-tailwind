@@ -59,6 +59,7 @@ button:focus-visible {
   mask-image: linear-gradient(to top, transparent 1%, black 50%);
 }
 
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
