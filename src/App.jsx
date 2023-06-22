@@ -16,6 +16,19 @@ import echo_pop from "./img/echo_pop.jpg";
 import echo_dot from "./img/echo_dot.jpg";
 import fire_tv from "./img/fire_tv.jpg";
 import echo_dot_4 from "./img/echo_dot_4.jpg";
+import Card_mobile_little from "./components/Card_mobile_little";
+import card_mobile_1 from "./img/card_mobile_1.jpg";
+import card_mobile_2 from "./img/card_mobile_2.jpg";
+import card_mobile_3 from "./img/card_mobile_3.jpg";
+import card_mobile_4 from "./img/card_mobile_4.jpg";
+import card_mobile_5 from "./img/card_mobile_5.jpg";
+import card_mobile_6 from "./img/card_mobile_6.jpg";
+import card_mobile_7 from "./img/card_mobile_7.jpg";
+import card_mobile_8 from "./img/card_mobile_8.jpg";
+import card_mobile_9 from "./img/card_mobile_9.jpg";
+import card_mobile_10 from "./img/card_mobile_10.jfif";
+import banner_mobile from "./img/banner_mobile.jpg";
+import banner_mobile_prime from "./img/banner_mobile_prime.jpg";
 
 function App() {
   return (
@@ -197,8 +210,55 @@ function App() {
             />
           </div>
         </div>
-
-        
+        {/* Mobile */}
+        <div className="flex gap-x-2 md:hidden mt-[-120px] z-20 px-2 overflow-x-auto overflow-y-visible">
+          <Card_mobile_little
+               text={"Continue comprando"}
+               image={card_mobile_1}
+              />
+              <Card_mobile_little
+               text={"Continuar navegando"}
+               image={card_mobile_2}
+              />
+              <Card_mobile_little
+               text={[]}
+               image={card_mobile_3}
+              />
+              <Card_mobile_little
+               text={[]}
+               image={card_mobile_4}
+              />
+              <Card_mobile_little
+               text={[]}
+               image={card_mobile_5}
+              />
+              <Card_mobile_little
+               text={[]}
+               image={card_mobile_6}
+              />
+              <Card_mobile_little
+               text={[]}
+               image={card_mobile_7}
+              />
+              <Card_mobile_little
+               text={[]}
+               image={card_mobile_8}
+              />
+              <Card_mobile_little
+               text={[]}
+               image={card_mobile_9}
+              />
+              <Card_mobile_little
+               text={[]}
+               image={card_mobile_10}
+              />
+        </div>
+        <div className="block md:hidden mt-[-15px]">
+          <img src={banner_mobile} alt="" />
+        </div>
+        <div className="block md:hidden mt-[-20px]">
+          <img src={banner_mobile_prime} alt="" />
+        </div>
       </main>
     </div>
   );
