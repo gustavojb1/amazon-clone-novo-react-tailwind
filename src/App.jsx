@@ -121,8 +121,8 @@ function App() {
       {/* PRINCIPAL */}
       <main className="flex flex-col gap-y-6 w-screen md:min-w-[1010px] md:max-w-[1500px] mx-auto">
         <Carroussel />
-
-        <div className="mt-[-22%] px-8 grid xl:grid-cols-4 grid-cols-3 gap-x-5">
+        {/* PRIMEIRA LINHA */}
+        <div className="hidden mt-[-22%] px-8 md:grid xl:grid-cols-4 grid-cols-3 gap-x-5">
           <Card
             images={[livro1, livro2, livro3, livro4]}
             description={[
@@ -158,6 +158,7 @@ function App() {
             />
           </div>
         </div>
+        {/* SEGUNDA LINHA */}
         <div className="hidden md:grid xl:grid-cols-4 grid-cols-3 px-8 gap-x-5 h-[420px]">
           <div className="bg-[url('./img/air.jpg')] filme bg-center  col-span-2 flex flex-col items-start pt-7 pl-5 pb-3">
             <p className="font-emberBold text-xl">
@@ -196,6 +197,8 @@ function App() {
             />
           </div>
         </div>
+
+        
       </main>
     </div>
   );

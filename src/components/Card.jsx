@@ -1,7 +1,6 @@
 // import React from 'react'
 
 const Card = ({ images, description }) => {
-  console.log(images);
   if (images.length === 4 && description.length === 5) {
     return (
       <div className="w-full z-10 bg-white text-black pt-5 pb-4">
