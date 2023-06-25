@@ -29,6 +29,30 @@ import card_mobile_9 from "./img/card_mobile_9.jpg";
 import card_mobile_10 from "./img/card_mobile_10.jfif";
 import banner_mobile from "./img/banner_mobile.jpg";
 import banner_mobile_prime from "./img/banner_mobile_prime.jpg";
+import Slider from "./components/Slider";
+import categories1 from "./img/categories/1.jpg";
+import categories2 from "./img/categories/2.jpg";
+import categories3 from "./img/categories/3.jpg";
+import categories4 from "./img/categories/4.jpg";
+import categories5 from "./img/categories/5.jpg";
+import categories6 from "./img/categories/6.jpg";
+import categories7 from "./img/categories/7.jpg";
+import categories8 from "./img/categories/8.jpg";
+import categories9 from "./img/categories/9.jpg";
+import categories10 from "./img/categories/10.jpg";
+import categories11 from "./img/categories/11.jpg";
+import categories12 from "./img/categories/12.jpg";
+import categories13 from "./img/categories/13.jpg";
+import categories14 from "./img/categories/14.jpg";
+import categories15 from "./img/categories/15.jpg";
+import categories16 from "./img/categories/16.jpg";
+import categories17 from "./img/categories/17.jpg";
+import categories18 from "./img/categories/18.jpg";
+import categories19 from "./img/categories/19.jpg";
+import categories20 from "./img/categories/20.jpg";
+import categories21 from "./img/categories/21.jpg";
+import categories22 from "./img/categories/22.jpg";
+import kindle_1 from "./img/produtos/mais_vendidos_kindle/001.jpg";
 
 function App() {
   return (
@@ -213,45 +237,21 @@ function App() {
         {/* Mobile */}
         <div className="flex gap-x-2 md:hidden mt-[-120px] z-20 px-2 overflow-x-auto overflow-y-visible">
           <Card_mobile_little
-               text={"Continue comprando"}
-               image={card_mobile_1}
-              />
-              <Card_mobile_little
-               text={"Continuar navegando"}
-               image={card_mobile_2}
-              />
-              <Card_mobile_little
-               text={[]}
-               image={card_mobile_3}
-              />
-              <Card_mobile_little
-               text={[]}
-               image={card_mobile_4}
-              />
-              <Card_mobile_little
-               text={[]}
-               image={card_mobile_5}
-              />
-              <Card_mobile_little
-               text={[]}
-               image={card_mobile_6}
-              />
-              <Card_mobile_little
-               text={[]}
-               image={card_mobile_7}
-              />
-              <Card_mobile_little
-               text={[]}
-               image={card_mobile_8}
-              />
-              <Card_mobile_little
-               text={[]}
-               image={card_mobile_9}
-              />
-              <Card_mobile_little
-               text={[]}
-               image={card_mobile_10}
-              />
+            text={"Continue comprando"}
+            image={card_mobile_1}
+          />
+          <Card_mobile_little
+            text={"Continuar navegando"}
+            image={card_mobile_2}
+          />
+          <Card_mobile_little text={[]} image={card_mobile_3} />
+          <Card_mobile_little text={[]} image={card_mobile_4} />
+          <Card_mobile_little text={[]} image={card_mobile_5} />
+          <Card_mobile_little text={[]} image={card_mobile_6} />
+          <Card_mobile_little text={[]} image={card_mobile_7} />
+          <Card_mobile_little text={[]} image={card_mobile_8} />
+          <Card_mobile_little text={[]} image={card_mobile_9} />
+          <Card_mobile_little text={[]} image={card_mobile_10} />
         </div>
         <div className="block md:hidden mt-[-15px]">
           <img src={banner_mobile} alt="" />
@@ -259,6 +259,41 @@ function App() {
         <div className="block md:hidden mt-[-20px]">
           <img src={banner_mobile_prime} alt="" />
         </div>
+
+        <Slider
+          images={[
+            categories1,
+            categories2,
+            categories3,
+            categories4,
+            categories5,
+            categories6,
+            categories7,
+            categories8,
+            categories9,
+            categories10,
+            categories11,
+            categories12,
+            categories13,
+            categories14,
+            categories15,
+            categories16,
+            categories17,
+            categories18,
+            categories19,
+            categories20,
+            categories21,
+            categories22,
+          ]}
+          tittle={"Navegue por categoria"}
+        />
+        <Slider
+          images={[
+            kindle_1
+          ]}
+          tittle={"Mais Vendidos em Loja Kindle"}
+        />
+        
       </main>
     </div>
   );

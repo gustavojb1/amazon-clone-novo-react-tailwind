@@ -1,7 +1,6 @@
 // import React from 'react'
 
 const Card_mobile_little = ({text, image}) => {
-  console.log(text)
   if (text.length>0) {
     return (
       <div className="min-w-[136px] w-[136px] bg-white rounded flex flex-col drop-shadow-[0_3px_8px_rgba(0,0,0,0.24)] ">
