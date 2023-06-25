@@ -53,6 +53,86 @@ import categories20 from "./img/categories/20.jpg";
 import categories21 from "./img/categories/21.jpg";
 import categories22 from "./img/categories/22.jpg";
 import kindle_1 from "./img/produtos/mais_vendidos_kindle/001.jpg";
+import kindle_2 from "./img/produtos/mais_vendidos_kindle/002.jpg";
+import kindle_3 from "./img/produtos/mais_vendidos_kindle/003.jpg";
+import kindle_4 from "./img/produtos/mais_vendidos_kindle/004.jpg";
+import kindle_5 from "./img/produtos/mais_vendidos_kindle/005.jpg";
+import kindle_6 from "./img/produtos/mais_vendidos_kindle/006.jpg";
+import kindle_7 from "./img/produtos/mais_vendidos_kindle/007.jpg";
+import kindle_8 from "./img/produtos/mais_vendidos_kindle/008.jpg";
+import kindle_9 from "./img/produtos/mais_vendidos_kindle/009.jpg";
+import kindle_10 from "./img/produtos/mais_vendidos_kindle/010.jpg";
+import kindle_11 from "./img/produtos/mais_vendidos_kindle/011.jpg";
+import kindle_12 from "./img/produtos/mais_vendidos_kindle/012.jpg";
+import kindle_13 from "./img/produtos/mais_vendidos_kindle/013.jpg";
+import kindle_14 from "./img/produtos/mais_vendidos_kindle/014.jpg";
+import kindle_15 from "./img/produtos/mais_vendidos_kindle/015.jpg";
+import kindle_16 from "./img/produtos/mais_vendidos_kindle/016.jpg";
+import kindle_17 from "./img/produtos/mais_vendidos_kindle/017.jpg";
+import kindle_18 from "./img/produtos/mais_vendidos_kindle/018.jpg";
+import kindle_19 from "./img/produtos/mais_vendidos_kindle/019.jpg";
+import kindle_20 from "./img/produtos/mais_vendidos_kindle/020.jpg";
+import kindle_21 from "./img/produtos/mais_vendidos_kindle/021.jpg";
+import kindle_22 from "./img/produtos/mais_vendidos_kindle/022.jpg";
+import kindle_23 from "./img/produtos/mais_vendidos_kindle/023.jpg";
+import kindle_24 from "./img/produtos/mais_vendidos_kindle/024.jpg";
+import kindle_25 from "./img/produtos/mais_vendidos_kindle/025.jpg";
+import kindle_26 from "./img/produtos/mais_vendidos_kindle/026.jpg";
+import kindle_27 from "./img/produtos/mais_vendidos_kindle/027.jpg";
+import kindle_28 from "./img/produtos/mais_vendidos_kindle/028.jpg";
+import kindle_29 from "./img/produtos/mais_vendidos_kindle/029.jpg";
+import kindle_30 from "./img/produtos/mais_vendidos_kindle/030.jpg";
+import skin_1 from "./img/produtos/skincare/001.jpg";
+import skin_2 from "./img/produtos/skincare/002.jpg";
+import skin_3 from "./img/produtos/skincare/003.jpg";
+import skin_4 from "./img/produtos/skincare/004.jpg";
+import skin_5 from "./img/produtos/skincare/005.jpg";
+import skin_6 from "./img/produtos/skincare/006.jpg";
+import skin_7 from "./img/produtos/skincare/007.jpg";
+import skin_8 from "./img/produtos/skincare/008.jpg";
+import skin_9 from "./img/produtos/skincare/009.jpg";
+import skin_10 from "./img/produtos/skincare/010.jpg";
+import skin_11 from "./img/produtos/skincare/011.jpg";
+import skin_12 from "./img/produtos/skincare/012.jpg";
+import foto_1 from "./img/produtos/mais_vendidos_camera_foto/1.jpg";
+import foto_2 from "./img/produtos/mais_vendidos_camera_foto/2.jpg";
+import foto_3 from "./img/produtos/mais_vendidos_camera_foto/3.jpg";
+import foto_4 from "./img/produtos/mais_vendidos_camera_foto/4.jpg";
+import foto_5 from "./img/produtos/mais_vendidos_camera_foto/5.jpg";
+import foto_6 from "./img/produtos/mais_vendidos_camera_foto/6.jpg";
+import foto_7 from "./img/produtos/mais_vendidos_camera_foto/7.jpg";
+import foto_8 from "./img/produtos/mais_vendidos_camera_foto/8.jpg";
+import foto_9 from "./img/produtos/mais_vendidos_camera_foto/9.jpg";
+import foto_10 from "./img/produtos/mais_vendidos_camera_foto/10.jpg";
+import foto_11 from "./img/produtos/mais_vendidos_camera_foto/11.jpg";
+import foto_12 from "./img/produtos/mais_vendidos_camera_foto/12.jpg";
+import foto_13 from "./img/produtos/mais_vendidos_camera_foto/13.jpg";
+import foto_14 from "./img/produtos/mais_vendidos_camera_foto/14.jpg";
+import foto_15 from "./img/produtos/mais_vendidos_camera_foto/15.jpg";
+import foto_16 from "./img/produtos/mais_vendidos_camera_foto/16.jpg";
+import foto_17 from "./img/produtos/mais_vendidos_camera_foto/17.jpg";
+import foto_18 from "./img/produtos/mais_vendidos_camera_foto/18.jpg";
+import foto_19 from "./img/produtos/mais_vendidos_camera_foto/19.jpg";
+import foto_20 from "./img/produtos/mais_vendidos_camera_foto/20.jpg";
+import foto_21 from "./img/produtos/mais_vendidos_camera_foto/21.jpg";
+import foto_22 from "./img/produtos/mais_vendidos_camera_foto/22.jpg";
+import foto_23 from "./img/produtos/mais_vendidos_camera_foto/23.jpg";
+import foto_24 from "./img/produtos/mais_vendidos_camera_foto/24.jpg";
+import foto_25 from "./img/produtos/mais_vendidos_camera_foto/25.jpg";
+import foto_26 from "./img/produtos/mais_vendidos_camera_foto/26.jpg";
+import foto_27 from "./img/produtos/mais_vendidos_camera_foto/27.jpg";
+import foto_28 from "./img/produtos/mais_vendidos_camera_foto/28.jpg";
+import foto_29 from "./img/produtos/mais_vendidos_camera_foto/29.jpg";
+import echo_01 from "./img/produtos/echo_1.jpg";
+import echo_02 from "./img/produtos/echo_2.jpg";
+import echo_03 from "./img/produtos/echo_3.jpg";
+import echo_04 from "./img/produtos/echo_4.jpg";
+import livros_oferta from "./img/produtos/livro.jpg";
+import cel_01 from "./img/produtos/cel_01.jpg";
+import cel_02 from "./img/produtos/cel_02.jpg";
+import cel_03 from "./img/produtos/cel_03.jpg";
+import cel_04 from "./img/produtos/cel_04.jfif";
+import amazon_day from "./img/produtos/amazon_day.jpg";
 
 function App() {
   return (
@@ -289,11 +369,132 @@ function App() {
         />
         <Slider
           images={[
-            kindle_1
+            kindle_1,
+            kindle_2,
+            kindle_3,
+            kindle_4,
+            kindle_5,
+            kindle_6,
+            kindle_7,
+            kindle_8,
+            kindle_9,
+            kindle_10,
+            kindle_11,
+            kindle_12,
+            kindle_13,
+            kindle_14,
+            kindle_15,
+            kindle_16,
+            kindle_17,
+            kindle_18,
+            kindle_19,
+            kindle_20,
+            kindle_21,
+            kindle_22,
+            kindle_23,
+            kindle_24,
+            kindle_25,
+            kindle_26,
+            kindle_27,
+            kindle_28,
+            kindle_29,
+            kindle_30,
           ]}
           tittle={"Mais Vendidos em Loja Kindle"}
         />
-        
+        <Slider
+          images={[
+            skin_1,
+            skin_2,
+            skin_3,
+            skin_4,
+            skin_5,
+            skin_6,
+            skin_7,
+            skin_8,
+            skin_9,
+            skin_10,
+            skin_11,
+            skin_12,
+          ]}
+          tittle={"Produtos de Skincare até R$300"}
+        />
+
+        <div className="hidden md:grid xl:grid-cols-4 grid-cols-3 px-8 gap-x-5 h-[420px]">
+          <div className="h-full">
+            <Card
+              images={[echo_01, echo_02, echo_03, echo_04]}
+              description={[
+                "Novo Show 5",
+                "Novo Show 8",
+                "Novo Show 10",
+                "Novo Show 15",
+                "Conheça o Echo Show com Alexa",
+                "Veja todos Echos",
+              ]}
+            />
+          </div>
+          <div className="h-full">
+            <Card
+              images={[livros_oferta]}
+              description={["Livros em Oferta", "Confira a Loja de Livros"]}
+            />
+          </div>
+          <div className="h-full">
+          <Card
+              images={[amazon_day]}
+              description={["Assine Amazon Prime e aproveite o Prime Day", "Experimente Amazon Prime"]}
+            />
+          </div>
+          <div className="hidden xl:block h-full">
+          <Card
+              images={[cel_01, cel_02, cel_03, cel_04]}
+              description={[
+                "Celulares",
+                "Tablets",
+                "Smartwatches",
+                "Acessórios",
+                "Celulares e Comunicação",
+                "Veja mais em Smartphones",
+              ]}
+            />
+          </div>
+        </div>
+
+        <Slider
+          images={[
+            foto_1,
+            foto_2,
+            foto_3,
+            foto_4,
+            foto_5,
+            foto_6,
+            foto_7,
+            foto_8,
+            foto_9,
+            foto_10,
+            foto_11,
+            foto_12,
+            foto_13,
+            foto_14,
+            foto_15,
+            foto_16,
+            foto_17,
+            foto_18,
+            foto_19,
+            foto_20,
+            foto_21,
+            foto_22,
+            foto_23,
+            foto_24,
+            foto_25,
+            foto_26,
+            foto_27,
+            foto_28,
+            foto_29,
+          ]}
+          tittle={"Mais Vendidos em Produtos para Câmeras e Foto"}
+        />
       </main>
     </div>
   );

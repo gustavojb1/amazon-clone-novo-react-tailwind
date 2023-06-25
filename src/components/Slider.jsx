@@ -1,6 +1,7 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 
 const Slider = ({ images, tittle }) => {
+  const [visible, setVisible]=useState("opacity-0")
   const inputEl = useRef(null);
   let count = 0;
 
@@ -9,10 +10,10 @@ const Slider = ({ images, tittle }) => {
       count = 1;
       let slide = inputEl.current;
       let width = slide.offsetWidth;
-      slide.scrollLeft += width;
+      slide.scrollLeft -= width;
       setTimeout(function () {
         count = 0;
-      }, 1000);
+      }, 500);
     }
   };
 
@@ -21,15 +22,25 @@ const Slider = ({ images, tittle }) => {
       count = 1;
       let slide = inputEl.current;
       let width = slide.offsetWidth;
-      slide.scrollLeft -= width;
+      slide.scrollLeft += width;
       setTimeout(function () {
         count = 0;
-      }, 1000);
+      }, 500);
     }
   };
 
+  function handleMouseEnter(){
+    setVisible("opacity-100")
+  }
+  function handleMouseLeave(){
+    setVisible("opacity-0")
+  }
+
   return (
-    <div className="px-8 md:block hidden">
+    <div className="px-8 md:block hidden "
+    onMouseEnter={handleMouseEnter}
+    onMouseLeave={handleMouseLeave}
+    >
       <div className="p-5 w-full bg-white text-black text-2xl font-emberBold relative">
         {tittle}
         <div
@@ -38,7 +49,7 @@ const Slider = ({ images, tittle }) => {
         >
           {images?.map((image, key) => {
             return (
-              <a href="#" className="shrink-0" key={key}>
+              <a href="#" className="shrink-0 min-w-[145px] flex justify-center" key={key}>
                 <img className="max-h-[200px] " src={image} alt="" />
               </a>
             );
@@ -46,13 +57,13 @@ const Slider = ({ images, tittle }) => {
         </div>
         <button
           onClick={scrolLeft}
-          className="absolute left-5 top-[35%] h-[100px] w-[45px] bg-white rounded hover:border-transparent flex items-center justify-center focus-visible:outline-none focus:outline-none"
+          className={`absolute left-5 top-[35%] h-[100px] w-[45px] bg-white rounded hover:border-transparent flex items-center justify-center focus-visible:outline-none focus:outline-none  ${visible} transition-all ease-linear delay-300`}
         >
           <i className="fa-solid fa-chevron-left text-5xl"></i>
         </button>
         <button
           onClick={scrolRight}
-          className="absolute right-5 top-[35%] h-[100px] w-[45px] bg-white rounded hover:border-transparent flex items-center justify-center focus-visible:outline-none focus:outline-none"
+          className={`absolute right-5 top-[35%] h-[100px] w-[45px] bg-white rounded hover:border-transparent flex items-center justify-center focus-visible:outline-none focus:outline-none  ${visible} transition-all ease-linear delay-300`}
         >
           <i className="fa-solid fa-chevron-right text-5xl"></i>
         </button>

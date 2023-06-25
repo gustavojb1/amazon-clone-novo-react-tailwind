@@ -83,7 +83,7 @@ const Card = ({ images, description }) => {
     return (
       <div className="flex z-10 flex-col w-full h-full bg-white text-black pt-5 pb-3 px-5">
         <div className="text-2xl font-emberBold pb-2">{description[0]}</div>
-        <a className="h-full w-full">
+        <a href="#" className="h-full w-full">
           <div
             className="w-full h-full bg-center bg-cover bg-no-repeat"
             style={{ backgroundImage: `url(${images[0]})` }}
