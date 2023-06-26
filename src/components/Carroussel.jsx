@@ -19,7 +19,8 @@ const Carroussel = () => {
       if (count == 0) {
         position = 5;
         count = 1;
-        let carousel = document.getElementById("teste");
+        let carousel = document.getElementById("carroussel-container");
+        console.log(carousel)
         let width = carousel.offsetWidth;
         carousel.scrollLeft += width * 4;
         setTimeout(function () {
@@ -30,7 +31,7 @@ const Carroussel = () => {
       if (count == 0) {
         position--;
         count = 1;
-        let carousel = document.getElementById("teste");
+        let carousel = document.getElementById("carroussel-container");
         let width = carousel.offsetWidth;
         carousel.scrollLeft -= width;
         setTimeout(function () {
@@ -45,7 +46,7 @@ const Carroussel = () => {
       if (count == 0) {
         position = 1;
         count = 1;
-        let carousel = document.getElementById("teste");
+        let carousel = document.getElementById("carroussel-container");
         let width = carousel.offsetWidth;
         carousel.scrollLeft -= width * 4;
         setTimeout(function () {
@@ -56,7 +57,7 @@ const Carroussel = () => {
       if (count == 0) {
         position++;
         count = 1;
-        let carousel = document.getElementById("teste");
+        let carousel = document.getElementById("carroussel-container");
         let width = carousel.offsetWidth;
         carousel.scrollLeft += width;
         setTimeout(function () {
@@ -70,7 +71,7 @@ const Carroussel = () => {
     <>
       <div className="hidden md:block relative w-full">
         <div
-          id="teste"
+          id="carroussel-container"
           className=" carousel flex items-center justify-start overflow-x-scroll no-scrollbar scroll-smooth relative "
         >
           <img src={img1} alt="" className="w-full" />
@@ -94,7 +95,7 @@ const Carroussel = () => {
       </div>
 
       <div className="flex md:hidden relative w-full overflow-x-auto snap-x snap-mandatory no-scrollbar">
-        <div id="teste" className="flex min-w-min snap-x relative w-full">
+        <div className="flex min-w-min snap-x relative w-full">
           <div className="w-screen snap-center carousel">
             <img src={img1_cel} alt="" />
           </div>
