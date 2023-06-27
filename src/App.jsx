@@ -134,11 +134,41 @@ import cel_03 from "./img/produtos/cel_03.jpg";
 import cel_04 from "./img/produtos/cel_04.jfif";
 import amazon_day from "./img/produtos/amazon_day.jpg";
 
+// Mobile
+import Card_mobile from "./components/Card_mobile";
+import ebooks_oferta from "./img/mobile/ebooks_oferta.jpg";
+import card2_1 from "./img/mobile/card2/1.jpg";
+import card2_2 from "./img/mobile/card2/2.jpg";
+import card2_3 from "./img/mobile/card2/3.jpg";
+import card2_4 from "./img/mobile/card2/4.jpg";
+import card3_1 from "./img/mobile/card3/1.jpg";
+import card3_2 from "./img/mobile/card3/2.jpg";
+import card3_3 from "./img/mobile/card3/3.jpg";
+import card3_4 from "./img/mobile/card3/4.jpg";
+import fire_stick from "./img/mobile/fire_stick.jpg";
+import echo_pop_m from "./img/mobile/echo_pop.jpg";
+import moda_fitiness from "./img/mobile/moda_fitiness.jfif";
+import bolsas from "./img/mobile/bolsas.jfif";
+import video_game from "./img/mobile/video_game.jpg";
+import echo_dot_m from "./img/mobile/echo_dot.jpg";
+
+import smartphone from "./img/mobile/smartphone.jpg";
+import tablet from "./img/mobile/tablet.jpg";
+import smartwatch from "./img/mobile/smartwatch.jpg";
+import accessorios from "./img/mobile/accessorios.jpg";
+
+import luminaria_teto from "./img/mobile/luminaria_teto.jpg";
+import abajur from "./img/mobile/abajur.jpg";
+import luz from "./img/mobile/luz.jpg";
+import lampada from "./img/mobile/lampada.jpg";
+
+import brasil from "./img/mobile/brasil.png";
+
 function App() {
   return (
     <div className="grid content-start h-screen w-screen overflow-y-auto items-start text-white bg-gray-200 font-emberRegular">
       {/* HEADER SUPERIOR */}
-      <div className="flex flex-wrap md:flex-nowrap bg-darkblue-700  md:bg-darkblue-900  px-2 pb-2 md:pt-1 md:px-3 items-center">
+      <div className="flex flex-wrap md:flex-nowrap bg-darkblue-700  md:bg-darkblue-900  px-2 pb-2 md:pt-1 md:px-3 items-center relative">
         <div className="py-1 px-2 mt-1 md:hidden">
           <i className="fa fa-bars text-2xl" />
         </div>
@@ -236,7 +266,7 @@ function App() {
         <i className="fa-solid fa-chevron-down text-xs"></i>
       </div>
       {/* PRINCIPAL */}
-      <main className="flex flex-col gap-y-6 w-screen md:min-w-[1010px] md:max-w-[1500px] mx-auto">
+      <main className="flex flex-col md:gap-y-6 w-screen md:min-w-[1010px] md:max-w-[1500px] mx-auto">
         <Carroussel />
         {/* PRIMEIRA LINHA */}
         <div className="hidden mt-[-22%] px-8 md:grid xl:grid-cols-4 grid-cols-3 gap-x-5">
@@ -315,7 +345,7 @@ function App() {
           </div>
         </div>
         {/* Mobile */}
-        <div className="flex gap-x-2 md:hidden mt-[-120px] z-20 px-2 overflow-x-auto overflow-y-visible">
+        <div className="flex gap-x-2 md:hidden mt-[-120px] mb-20 z-20 px-2 overflow-x-auto overflow-y-visible">
           <Card_mobile_little
             text={"Continue comprando"}
             image={card_mobile_1}
@@ -333,13 +363,184 @@ function App() {
           <Card_mobile_little text={[]} image={card_mobile_9} />
           <Card_mobile_little text={[]} image={card_mobile_10} />
         </div>
-        <div className="block md:hidden mt-[-15px]">
+        <div className="md:hidden pt-3 pb-2 flex flex-col bg-white">
+          <div className="px-3 text-black text-xl leading-6 ">
+            <span className="font-emberBold ">
+              Acesse uma conta para ter a melhor experiência
+            </span>
+            <button className="w-full rounded-lg bg-[#FCD200] my-3  text-base py-3">
+              {" "}
+              Fazer login de forma segura
+            </button>
+            <a href="#" className="text-sky-600 text-sm">
+              Criar uma conta
+            </a>
+          </div>
+        </div>
+        <div className="block md:hidden mt-1 ">
           <img src={banner_mobile} alt="" />
         </div>
-        <div className="block md:hidden mt-[-20px]">
+        <div className="block md:hidden my-2">
           <img src={banner_mobile_prime} alt="" />
         </div>
 
+        <Card_mobile
+          items={[
+            {
+              image: card2_1,
+              description: "Todos os meus pecados",
+              price: "3.99",
+            },
+            {
+              image: card2_2,
+              description: "Rejeitada no altar",
+              price: "1.99",
+            },
+            {
+              image: card2_3,
+              description: "Pecado Preferido",
+              price: "5.99",
+            },
+            {
+              image: card2_4,
+              description: "APENAS UMA NOITE",
+              price: "1.99",
+            },
+          ]}
+          description_card={["Mais vendidos em eBooks Kindle"]}
+        />
+        <Card_mobile
+          items={[
+            {
+              image: ebooks_oferta,
+            },
+          ]}
+          description_card={["eBooks em Oferta"]}
+        />
+        <Card_mobile
+          items={[
+            {
+              image: card3_1,
+              description: "Max Titanium Creatina",
+              price: "89.60",
+            },
+            {
+              image: card3_2,
+              description: "Black Skull Creatine",
+              price: "59.70",
+            },
+            {
+              image: card3_3,
+              description: "100% Pure Creatine",
+              price: "107.80",
+            },
+            {
+              image: card3_4,
+              description: "Neutrogena Hidratante",
+              price: "48.90",
+            },
+          ]}
+          description_card={[
+            "Recompras frequentes em Cuidados Pessoais e da Casa",
+          ]}
+        />
+        <Card_mobile
+          items={[
+            {
+              image: fire_stick,
+            },
+          ]}
+          description_card={["Fire TV Stick: teste por 30 dias"]}
+        />
+        <Card_mobile
+          items={[
+            {
+              image: echo_pop_m,
+            },
+          ]}
+          description_card={["Echo Pop: novo design com som envolvente"]}
+        />
+        <Card_mobile
+          items={[
+            {
+              image: moda_fitiness,
+            },
+          ]}
+          description_card={["Moda Fitiness"]}
+        />
+        <Card_mobile
+          items={[
+            {
+              image: bolsas,
+            },
+          ]}
+          description_card={["Bolsas até R$149"]}
+        />
+        <Card_mobile
+          items={[
+            {
+              image: video_game,
+            },
+          ]}
+          description_card={["Ofertas em Video Games"]}
+        />
+        <Card_mobile
+          items={[
+            {
+              image: echo_dot_m,
+            },
+          ]}
+          description_card={["Novo Echo Dot: com áudio ainda melhor"]}
+        />
+
+        <Card_mobile
+          items={[
+            {
+              image: smartphone,
+              description: "Smartphones",
+            },
+            {
+              image: tablet,
+              description: "Tablets",
+            },
+            {
+              image: smartwatch,
+              description: "Smartwatches",
+            },
+            {
+              image: accessorios,
+              description: "Acessórios",
+            },
+          ]}
+          description_card={[
+            "Celulares e Comunicação",
+            "Explore a Loja de Celulares",
+          ]}
+        />
+
+        <Card_mobile
+          items={[
+            {
+              image: luminaria_teto,
+              description: "Luminária de Teto",
+            },
+            {
+              image: abajur,
+              description: "Abajures",
+            },
+            {
+              image: luz,
+              description: "Luzes Externas",
+            },
+            {
+              image: lampada,
+              description: "Lâmpadas",
+            },
+          ]}
+          description_card={["Iluminação até R$80", "Veja mais em Iluminação"]}
+        />
+
+        {/* Fim Mobile */}
         <Slider
           images={[
             categories1,
@@ -499,7 +700,7 @@ function App() {
           tittle={"Mais Vendidos em Produtos para Câmeras e Foto"}
         />
       </main>
-      <footer className="bg-darkblue-700 mt-6">
+      <footer className="bg-darkblue-700 md:mt-6">
         {/* Login */}
         <div className="bg-white pt-10 pb-5 hidden md:block">
           <div className="rounded border border-gray-300 pt-10 pb-5 flex flex-col items-center justify-center text-black text-sm">
@@ -517,11 +718,11 @@ function App() {
           </div>
         </div>
         {/* Voltar ao início */}
-        <div className="py-3 flex justify-center text-sm hover:bg-darkblue-500 bg-darkblue-600">
+        <div className="hidden md:flex py-3  justify-center text-sm hover:bg-darkblue-500 bg-darkblue-600">
           Voltar ao início
         </div>
         {/* Menus */}
-        <div className="w-[1000px] mx-auto grid grid-cols-4 py-16 ">
+        <div className="hidden md:grid w-[1000px] mx-auto grid-cols-4 py-16 ">
           <div className="flex flex-col">
             Conheça-nos
             <a
@@ -650,7 +851,7 @@ function App() {
           </div>
         </div>
         {/* Países */}
-        <div className="pt-8 pb-3 text-sm flex flex-col items-center border-t border-t-gray-600  ">
+        <div className="pt-8 pb-3 text-sm md:flex hidden flex-col items-center border-t border-t-gray-600  ">
           <img src={logo} alt="" className="w-20" />
           <ul className="flex flex-wrap justify-center text-xs pt-4 text-gray-400 ">
             <li className="px-2 border-r border-gray-600 hover:underline">
@@ -723,8 +924,8 @@ function App() {
                 Emirados Árabes Unidos
               </a>
             </li>
-            </ul>
-            <ul className="flex flex-wrap justify-center text-xs mt-1 text-gray-400 ">
+          </ul>
+          <ul className="flex flex-wrap justify-center text-xs mt-1 text-gray-400 ">
             <li className="px-2 border-l border-gray-600 hover:underline">
               <a href="#" className="text-white hover:text-white">
                 Reino Unido
@@ -737,11 +938,16 @@ function App() {
             </li>
           </ul>
           <p className="text-xs mt-2">E não se esqueça:</p>
-          <a href="#" className="text-xs pl-4 text-white hover:text-white hover:underline">Amazon Web Services</a>
+          <a
+            href="#"
+            className="text-xs pl-4 text-white hover:text-white hover:underline"
+          >
+            Amazon Web Services
+          </a>
         </div>
         {/* Ultima linha */}
-        <div className="pt-3 flex flex-col bg-darkblue-950 items-center">
-        <ul className="flex flex-wrap justify-center text-xs mt-1 text-gray-400 ">
+        <div className="pt-3 md:flex hidden flex-col bg-darkblue-950 items-center">
+          <ul className="flex flex-wrap justify-center text-xs mt-1 text-gray-400 ">
             <li className="px-2 border-r border-gray-600 hover:underline">
               <a href="#" className="text-white hover:text-white">
                 Condições de uso
@@ -763,10 +969,105 @@ function App() {
               </a>
             </li>
           </ul>
-          <p className="text-xs mt-1">© 2021-2023 Amazon.com, Inc. ou suas afiliadas</p>
-          <p className="text-xs mt-10 text-gray-400">Amazon Serviços de Varejo do Brasil Ltda. | CNPJ 15.436.940/0001-03</p>
-          <p className="text-xs mt-10 text-gray-400">Av. Juscelino Kubitschek, 2041, Torre E, 18° andar - São Paulo CEP: 04543-011|<span className="text-white px-3 hover:underline cursor-pointer">Fale conosco</span>| ajuda-amazon@amazon.com.br</p>
-          <p className="text-xs my-10 text-gray-400">Formas de pagamento aceitas: cartões de crédito (Visa, MasterCard, Elo e American Express), cartões de débito (Visa e Elo), Boleto e Pix.</p>
+          <p className="text-xs mt-1">
+            © 2021-2023 Amazon.com, Inc. ou suas afiliadas
+          </p>
+          <p className="text-xs mt-10 text-gray-400">
+            Amazon Serviços de Varejo do Brasil Ltda. | CNPJ 15.436.940/0001-03
+          </p>
+          <p className="text-xs mt-10 text-gray-400">
+            Av. Juscelino Kubitschek, 2041, Torre E, 18° andar - São Paulo CEP:
+            04543-011|
+            <span className="text-white px-3 hover:underline cursor-pointer">
+              Fale conosco
+            </span>
+            | ajuda-amazon@amazon.com.br
+          </p>
+          <p className="text-xs my-10 text-gray-400">
+            Formas de pagamento aceitas: cartões de crédito (Visa, MasterCard,
+            Elo e American Express), cartões de débito (Visa e Elo), Boleto e
+            Pix.
+          </p>
+        </div>
+        {/* MOBILE */}
+        <div className="flex md:hidden flex-col items-center py-3  bg-darkblue-500 text-xs">
+          <i className="fa-solid fa-caret-up"></i>
+          VOLTAR AO TOPO DA PÁGINA
+        </div>
+        <div className="grid md:hidden grid-cols-2 py-7 pl-4 leading-5">
+          <div className="flex flex-col gap-y-5">
+            <a href="" className="text-white ">
+              {" "}
+              Sua Amazon
+            </a>
+            <a href="" className="text-white ">
+              {" "}
+              Seus produtos do Programe e Poupe
+            </a>
+            <a href="" className="text-white ">
+              {" "}
+              Encontre uma lista de desejos ou registro
+            </a>
+            <a href="" className="text-white ">
+              {" "}
+              Seus itens visto recentemente
+            </a>
+            <a href="" className="text-white ">
+              {" "}
+              Configurações de 1-Clique
+            </a>
+            <a href="" className="text-white ">
+              {" "}
+              Atendimento ao cliente
+            </a>
+          </div>
+          <div className="flex flex-col gap-y-5">
+            <a href="" className="text-white ">
+              {" "}
+              Seus pedidos
+            </a>
+            <a href="" className="text-white ">
+              {" "}
+              Suas Listas
+            </a>
+            <a href="" className="text-white ">
+              {" "}
+              Sua conta
+            </a>
+            <a href="" className="text-white ">
+              {" "}
+              Devoluções
+            </a>
+            <a href="" className="text-white ">
+              {" "}
+              Crédito e Produtos de Pagamento
+            </a>
+            <a href="" className="text-white ">
+              {" "}
+              Venda na Amazon
+            </a>
+          </div>
+        </div>
+        <div className="py-10 flex md:hidden flex-col items-center bg-darkblue-900 text-gray-300 text-sm">
+          <div className="flex items-center">
+            <div className="mr-7">
+              <i className="fa-solid fa-globe mr-2"></i>
+              Português
+            </div>
+            <div className="flex items-center">
+              <img src={brasil} alt="" className="h-3 mr-2" />
+              Brasil
+            </div>
+          </div>
+          <div className="mt-8 mb-5 text-base text-white">
+            Já é um cliente? Faça seu login
+          </div>
+          <div className="flex gap-x-4">
+            <a href="#" className="text-gray-300 text-xs">Cookies</a>
+            <a href="#" className="text-gray-300 text-xs"> Condições de Uso</a>
+            <a href="#" className="text-gray-300 text-xs">Aviso de Privacidade</a>
+          </div>
+          <div className="text-xs mt-2">© 1996-2023 Amazon.com, Inc. ou suas afiliadas</div>
         </div>
       </footer>
     </div>

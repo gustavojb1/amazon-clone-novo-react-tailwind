@@ -47,9 +47,9 @@ const Slider = ({ images, tittle }) => {
           ref={inputEl}
           className="flex gap-x-3 overflow-x-scroll no-scrollbar scroll-smooth"
         >
-          {images?.map((image, key) => {
+          {images?.map((image, index) => {
             return (
-              <a href="#" className="shrink-0 min-w-[145px] flex justify-center" key={key}>
+              <a href="#" className="shrink-0 min-w-[145px] flex justify-center" key={index}>
                 <img className="max-h-[200px] " src={image} alt="" />
               </a>
             );
