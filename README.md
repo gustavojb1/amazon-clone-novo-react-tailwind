@@ -2,5 +2,6 @@
 
 Instalação do projeto para rodar localmente
 
-npm i
-npm run dev
+<p>npm i</p>
+<p>npm run dev</p>
+
